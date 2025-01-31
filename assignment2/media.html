@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Media Page</title>
+	<style>
+		nav ul {
+			height: 50px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-inline: 50px;
+			background-color: blue;
+		}
+
+		li {
+			list-style-type: none;
+
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			text-align: center;
+			font-size: 30px;
+		}
+
+		section {
+			text-align: center;
+		}
+
+		p {
+			font-size: 20px;
+			max-width: 900px;
+			margin: 0 auto;
+		}
+
+		footer {
+			margin-top: 50px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../assignment1/form.html">Form</a></li>
+			<li><a href="./table.html">Table</a></li>
+			<li><a href="media.html">Media</a></li>
+		</ul>
+	</nav>
+	<header>
+		<h1>HTML Media Elements</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Image</h2>
+			<picture>
+				<source srcset="img1.jpeg" media="(min-width: 1024px)">
+				<source srcset="img1.jpeg" media="(min-width: 768px)">
+				<img src="img1.jpeg" alt="Description of the image">
+			</picture>
+		</section>
+
+		<section>
+			<h2>Video</h2>
+			<video controls>
+				<source src="vid1.webm" type="video/webm">
+				Your browser does not support the video element.
+			</video>
+		</section>
+
+		<section>
+			<h2>Audio</h2>
+			<audio controls>
+				<source src="audio.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Jolomi | Abuja Nigeria</p>
+		<a href="#top">Back to Top</a>
+	</footer>
+</body>
+
+</html>
